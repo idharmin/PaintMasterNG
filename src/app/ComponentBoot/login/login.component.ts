@@ -68,7 +68,8 @@ export class LoginComponent implements OnInit {
           if (Response.length == 0) {
             alert('Wrong Password')
             return;
-          }          
+          }  
+          this._Router.navigate(['../user'])        
         }
       });
   }
